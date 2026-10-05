@@ -142,7 +142,7 @@ impl<const CAP: usize> ArrayString<CAP>
         }
 
         // Safety: we know len <= CAP and elements < len are initialized
-        vec.len = len as u32;
+        vec.len = len as LenUint;
         vec
     }
 
